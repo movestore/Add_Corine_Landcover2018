@@ -1,0 +1,51 @@
+{
+  "settings": [
+	   {
+      "id": "stats",
+      "name": "Generate Landcover usage statistics",
+      "description": "Select if you want the App to create a csv file with useage statistics of each Corine landcover class for your individuals and overall. Default FALSE.",
+      "defaultValue": false,
+      "type": "CHECKBOX"
+    }
+  ],
+  "dependencies": {
+    "R": [
+      {
+        "name": "move"
+      },
+	  {
+        "name": "raster"
+      },
+	  {
+        "name": "foreign"
+      }
+    ]
+  },
+  "createsArtifacts": true,
+  "license": {
+    "key": "MIT"
+  },
+  "language": "eng",
+  "keywords": [
+	"CORINE",
+    "landcover",
+	"habitat",
+	"habitat use",
+	"Europe"
+  ],
+  "people": [
+    {
+      "firstName": "Andrea",
+      "middleInitials": null,
+      "lastName": "Kölzsch",
+      "email": "akoelzsch@ab.mpg.de",
+      "roles": ["compiler","author","creator"],
+      "orcid": "0000-0003-0193-1563",
+      "affiliation": "Max-Planck-Institute of Animal Behavior",
+      "affiliationRor": "https://ror.org/026stee22"
+    }
+  ],
+  "documentation" : {
+    "url": "https://github.com/movestore/Add_Corine_Landcover2018/blob/main/README.md"
+  }
+}
