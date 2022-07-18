@@ -7,7 +7,8 @@ rFunction <- function(data,stats=FALSE)
   Sys.setenv(tz="UTC")
   
   #GDALinfo("CLC2018_CLC2018_V2018_20.tif")
-  corineT <- raster("CLC2018_CLC2018_V2018_20.tif")
+  #corineT <- raster("CLC2018_CLC2018_V2018_20.tif")
+  corineT <- raster(paste0(Sys.getenv(x = "APP_FILES_DIR", "/tmp/app-files/"),"CLC2018_CLC2018_V2018_20.tif"))
   #summary(corine,maxsamp=100)
   #crs(corine)
   
@@ -86,11 +87,6 @@ rFunction <- function(data,stats=FALSE)
   return(result)
 }
 
-  
-  
-  
-  
-  
   
   
   
