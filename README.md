@@ -26,7 +26,7 @@ moveStack in Movebank format
 `Corine_Landcover_UseStats.csv`: table providing proportions of use of each landcover class by track in terms of points and durations. For each landcover class an average and standard deviation usage is provided for location and duration proportions.
 
 ### Settings
-**Generate Landcover usage statistics** (`stats`): Select this if the useage statistics shall be performed and provided as .csv file. Default FALSE.
+**Generate Landcover usage statistics (`stats`)**: Select this if the useage statistics shall be performed and provided as .csv file. Default FALSE.
 
 ### Null or error handling:
 **Setting `Generate Landcover usage statistics`:** Both TRUE and FALSE are valid options, none else possible.
