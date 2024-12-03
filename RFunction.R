@@ -9,9 +9,9 @@ rFunction <- function(data,stats=FALSE)
   
   #GDALinfo("CLC2018_CLC2018_V2018_20.tif")
   
-  #fileName_clc_tif <- getAuxiliaryFilePath("clc_tif")
-  #corineT <- rast(fileName_clc_tif)
-  corineT <- rast("CLC2018_CLC2018_V2018_20.tif")
+  fileName_clc_tif <- getAuxiliaryFilePath("clc_tif")
+  corineT <- rast(fileName_clc_tif)
+  #corineT <- rast("CLC2018_CLC2018_V2018_20.tif")
   #summary(corine,maxsamp=100)
   #crs(corine)
   
@@ -21,9 +21,9 @@ rFunction <- function(data,stats=FALSE)
   
   data$clc <- as.numeric(as.character(extract(corine,data,method="simple")[,2]))
   
-  #fileName_clc_dbf <- getAuxiliaryFilePath("clc_dbf")
-  #corineClasses <- read.dbf(fileName_clc_dbf,as.is=TRUE)
-  corineClasses <- read.dbf("CLC2018_CLC2018_V2018_20.tif.vat.dbf",as.is=TRUE)
+  fileName_clc_dbf <- getAuxiliaryFilePath("clc_dbf")
+  corineClasses <- read.dbf(fileName_clc_dbf,as.is=TRUE)
+  #corineClasses <- read.dbf("CLC2018_CLC2018_V2018_20.tif.vat.dbf",as.is=TRUE)
   corine.landcover <- character(length(data$clc))
   uclasses <- unique(data$clc)
   for (i in seq(along=uclasses))
