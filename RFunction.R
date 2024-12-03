@@ -67,8 +67,8 @@ rFunction <- function(data,stats=FALSE)
       LCi <- names(tabi)
       if (!any(names(datai)=="timelag"))
       {
-        datai$timelag <- mt_time_lags(data, "hours")
-        logger.info("Appended timelag to track i with unit hours.")
+        datai$timelag <- mt_time_lags(datai, "hours")
+        logger.info(paste("Appended new attribute 'timelag' to track '",unique(mt_track_id(datai))[1], "' using hour as unit."))
       }
       
       propptsi <- ni/sum(ni,na.rm=TRUE)
