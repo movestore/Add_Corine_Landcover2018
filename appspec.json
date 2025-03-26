@@ -1,4 +1,5 @@
 {
+  "version": "1.2",
   "settings": [
 	   {
       "id": "stats",
@@ -11,17 +12,31 @@
   "dependencies": {
     "R": [
       {
-        "name": "move"
+        "name": "move2"
       },
 	  {
-        "name": "raster"
+        "name": "terra"
       },
 	  {
         "name": "foreign"
+      },
+	  {
+        "name": "sf"
       }
     ]
   },
-  "createsArtifacts": true,
+  "providedAppFiles": [
+    {
+      "settingId": "clc_tif",
+      "from": "data/auxiliary/user-files/provided-app-files/clc_tif/CLC2018_CLC2018_V2018_20.tif"
+    }
+  ],
+  "providedAppFiles": [
+    {
+      "settingId": "clc_dbf",
+      "from": "data/auxiliary/user-files/provided-app-files/clc_dbf/CLC2018_CLC2018_V2018_20.tif.vat.dbf"
+    }
+  ],
   "license": {
     "key": "MIT"
   },
@@ -44,8 +59,5 @@
       "affiliation": "Max-Planck-Institute of Animal Behavior",
       "affiliationRor": "https://ror.org/026stee22"
     }
-  ],
-  "documentation" : {
-    "url": "https://github.com/movestore/Add_Corine_Landcover2018/blob/main/README.md"
-  }
+  ]
 }

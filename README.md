@@ -12,11 +12,19 @@ This App uses the Corine Landcover 2018 100m resolution gif and annotates it to 
 
 If selecting the optional `stats`, the App calculates usage statistics of each track and overall of all used landcover classes and returns them as .csv file.
 
+### Application scope
+
+#### Generality of App usability
+This App was developed using birds in Europe.
+
+#### Required data properties
+This App only provides sensible results for data within the spatial area that CORINE landcover data cover, i.e. Europe.
+
 ### Input data
-moveStack in Movebank format
+move2 location object
 
 ### Output data
-moveStack in Movebank format
+move2 location object
 
 ### Artefacts
 `Corine_Landcover_Barplots.pdf`: barplots for each track and overall indicating which landcover class is used how much (based on location proportions).
@@ -27,6 +35,12 @@ moveStack in Movebank format
 
 ### Settings
 **Generate Landcover usage statistics (`stats`)**: Select this if the useage statistics shall be performed and provided as .csv file. Default FALSE.
+
+### Changes in output data
+The App add to the input data the columns `clc` (the numerical value of the appended land cover class) and `corine.landcover` (the name of the appended land cover class).
+
+### Most common errors
+please make issues here, if repeated errors occur.
 
 ### Null or error handling:
 **Setting `Generate Landcover usage statistics`:** Both TRUE and FALSE are valid options, none else possible.
